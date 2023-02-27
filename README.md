@@ -1,5 +1,7 @@
+
+
 <div align="center">
-## FRONT-END OF RESUME-PARSE PROJECT
+<h1> FRONT-END OF RESUME-PARSE PROJECT </h1>
 
 ---
 
