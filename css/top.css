@@ -1,0 +1,44 @@
+.sidebar.close ~ .top{
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+.top {
+    position: relative;
+    left: 250px;
+    height: 5%;
+    width: calc(100% - 250px);
+    transition: var(--tran-05);
+}
+
+.top .user-box {
+    display: flex;
+    position: relative;
+    padding: 20px;
+    color: var(--text-color);
+    justify-content: right;
+}
+
+.user-box .text {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    
+    
+    border-radius:10px;
+}
+
+.user-box .text p {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-right: 6px;
+    margin-left: 12px;
+}
+
+.user-box .text span {
+    font-size: 24px;
+    margin-right: 12px;
+}

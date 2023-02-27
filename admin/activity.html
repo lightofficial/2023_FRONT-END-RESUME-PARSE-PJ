@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Control for admins</title>
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="css/userlist.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/data-center.css">
+    <!-- BOX ICON CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- DATATABLES -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/tables.css">
+    
+    
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <i class='bx bxs-home'></i>
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Resume</span>
+                    <span class="profession">Parse</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <!-- <li class="search-box search-btn">
+                    <a href="#">
+                        <i class='bx bx-search icon'></i>
+                        <input type="search" placeholder="Search..">
+                        
+                    </a>
+                </li> -->
+
+                <ul class="menu-links">
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-user-rectangle icon'></i>
+                            <span class="text nav-text">Admin</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li> -->
+
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="userlist.html">
+                            <i class='bx bxs-user-plus icon'></i>
+                            <span class="text nav-text">User Control</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="client-control.html">
+                            <i class='bx bxs-user-account icon'></i>
+                            <span class="text nav-text">Client Control</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxl-soundcloud icon'></i>
+                            <span class="text nav-text">Activity</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-credit-card-front icon'></i>
+                            <span class="text nav-text">Credits</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="top">
+        <div class="user-box">
+                <div class="text">
+                    <p>username</p>
+                    <span><i class='bx bxs-user usericon'></i></span>
+                </i>
+            </div>
+        </div>
+    </section>
+
+    <section class="data">
+        <div class="card-body">
+                <div class="header-text">
+                    <i class='bx bxs-box'></i>
+                    <h2>Recent Upload</h2>
+                </div>
+
+                <table id="myTable" class="myTables">
+                    <thead>
+                        <th>No.</th>
+                        <th>Username</th>
+                        <th>Filename</th>
+                        <th>Category</th>
+                        <th>Upload Data</th>
+                        <th>Action</th>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>lightofficial</td>
+                            <td>lightofficialstudio@gmail.com</td>
+                            <td>Business</td>
+                            <td>19-02-2565</td>
+                            <td>
+                                <a href="edit.php?id=<?= $user['id']; ?>" class="btn btn-primary">See</a> 
+                                <!--<a href="?delete=<?= $user['id']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure want to delete?')">Delete</a>-->
+                            </td>
+                        </tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </section>
+
+    
+
+    <script src="../js/general.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready( function () {
+        $('#myTable').DataTable();
+        } );
+    </script>
+</body>
+</html>

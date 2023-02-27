@@ -1,0 +1,81 @@
+.sidebar.close ~ .data {
+    left: 88px;   
+    transition: var(--tran-03);
+    width: 90%;
+}
+
+.sidebar ~ .data {
+    left: 250px;
+    margin-left: 2%;
+    width: 80%;
+    transition: var(--tran-03);
+}
+
+
+.data
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    height: auto;
+    width: 90%;
+    height: 600px;
+    transition: var(--tran-05);
+    background: var(--box-color);
+    border-radius: 10px;
+    border: 1px solid rgba(112, 112, 112, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+    overflow: auto;
+    padding: 0 40px;
+    padding-bottom: 20px;
+    transition: var(--tran-05);
+    color: var(--text-color);
+}
+
+/* MAX WIDTH CONTENTS */
+
+@media (max-width: 1400px) {
+
+    .sidebar ~ .data {
+        left: 250px;
+        margin-left: 2%;
+        transition: var(--tran-03);
+    }
+
+    .box-top .box{
+        width: calc(100% / 2 - 15px);
+        margin-top: 15px;
+        transition: var(--tran-05);
+    }
+
+    .box-top .box .text {
+        font-size: 18px;
+        transition: var(--tran-05);
+
+    }
+    
+    .box-top .box .number {
+        font-size: 22px;
+        transition: var(--tran-05);
+    }
+}
+
+@media (max-width: 1000px) {
+    .sidebar.close ~ .data {   
+        width: 85%;
+    }
+    
+    .sidebar ~ .data {
+        left: 88px;
+        width: 85%;
+    }
+
+
+    .data .card-body table {
+        font-size: 12px;
+    }
+}

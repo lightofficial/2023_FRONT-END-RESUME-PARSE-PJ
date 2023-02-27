@@ -1,0 +1,279 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background: url("../img/blur_bg.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1038px;
+    height: 547px;
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.25));
+}
+
+.container .box-left {
+    background-color: #373B8A;
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-radius: 20px 0px 0px 20px;
+    flex-direction: column;
+
+}
+
+.box-left .header-text {
+    width: 100%;
+    height: 30%;
+    color: white;
+}
+
+.box-left .header-text .header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 120px;
+}
+
+.box-left .header-text-2 {
+    margin-top: 10%;
+    width: 100%;
+    height: 5%;
+    color: white;
+}
+
+.box-left .header-text-2 .header-2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.box-left .box-text {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    color:white;
+}
+
+.box-left .box-text-2 {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    height: auto;
+    
+}
+
+.box-left .box-text-2 a {
+    color: #FFF;
+    text-decoration: dash;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.box-left .box-text-2 a:hover {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.box-left .box-text .text{
+    margin-top: 15px;
+    height: 100%;
+}
+
+.box-left .box-register {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    height: calc(100% - 50% - 40%);
+    margin-top: 2.5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+
+.box-register a {
+    margin-top:2.5%;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: all 0.5s ease;
+    font-weight: 600;
+}
+
+.box-register a:hover {
+    transition: all 0.5s ease;
+    font-size: 24px;
+    
+}
+
+
+.container .box-right {
+    background: #FFFFFF;
+    height: 100%;
+    width: 50%;
+    float: right;
+    border-radius: 0px 20px 20px 0px;
+
+}
+.box-right .header-text{
+    height: 25%;
+}
+.box-right .header-text .header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.box-right .form-right-side {
+    height: 80%;
+}
+
+.form-right-side form {
+    height: 100%;
+}
+
+.form-right-side form .input_text {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input_text input {
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #adadad;
+}
+
+.input_text label {
+    height: 20px;
+    width: 50%;
+    text-align: left;
+}
+
+form button {
+    text-align: center;
+}
+
+.form-right-side form .btns {
+    margin-top: 20px;
+    width: 35%;
+    height: 50px;
+    background-color: #373B8A;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.5s ease;
+    font-weight: 600;
+}
+
+.form-right-side form .btns:hover {
+    font-size: 17px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width:950px)
+{
+    .box-left .header-text .header {
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .header-text-2 .header-2 {
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .box-register {
+        margin-top: 24px;
+        height: calc(100% - 50% - 40%);
+    }
+
+    .box-left .box-text .text {
+        font-size: 12px;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .box-register a {
+        margin-top: 14px;
+        font-size: 12px;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .box-register a:hover {
+        font-size: 13px;
+        transition: all 0.5s ease;
+    }
+
+}
+
+@media screen and (max-width:525px)
+{
+    .box-left {
+        transition: all 0.5s ease;
+    }
+
+    .container {
+        width: 100%;
+        height: 75%;
+    }
+
+    .box-right {
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .header-text .header {
+        font-size: 28px;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .box-text .text {
+        font-size: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .box-register {
+        margin-top: 24px;
+        height: calc(100% - 50% - 45%);
+    }
+
+    .box-left .box-register a {
+        margin-top: 8px;
+        font-size: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .box-left .box-register a:hover {
+        font-size: 11px;
+        transition: all 0.5s ease;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="css/upload-body.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/data-center.css">
+    
+    <!-- BOX ICON CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- BOOSTRAP -->
+    
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <i class='bx bxs-home'></i>
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Resume</span>
+                    <span class="profession">Parse</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <!-- <li class="search-box search-btn">
+                    <a href="#">
+                        <i class='bx bx-search icon'></i>
+                        <input type="search" placeholder="Search..">
+                        
+                    </a>
+                </li> -->
+
+                <ul class="menu-links">
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-user-rectangle icon'></i>
+                            <span class="text nav-text">Admin</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li> -->
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-cloud-upload icon'></i>
+                            <span class="text nav-text">Upload</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="candidate.html">
+                            <i class='bx bxs-user-plus icon'></i>
+                            <span class="text nav-text">Candidate</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="client.html">
+                            <i class='bx bxs-user-account icon'></i>
+                            <span class="text nav-text">Client</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-credit-card-front icon'></i>
+                            <span class="text nav-text">Credits</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="top">
+        <div class="user-box">
+                <div class="text">
+                    <p>username</p>
+                    <span><i class='bx bxs-user usericon'></i></span>
+                </i>
+            </div>
+        </div>
+    </section>
+
+    <section class="data">
+        <div class="card-body">
+            <div class="upload-center">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="upload-form">
+                        <input type="file" required class="form-control" id="imgInput" name="img">
+                    </div>
+
+                    <div class="image-preview">
+                        <img id="previewImg" alt="">
+                    </div>
+                    
+                    <div class="footer">
+                        <button type="submit" class=""><span>Upload</span></button>
+                        <button type="button"><span>Cancel</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/general.js"></script>
+    <script src="../js/previewimg.js"></script>
+    
+</body>
+</html>

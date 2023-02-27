@@ -1,0 +1,36 @@
+
+button {
+    border: none;
+    
+}
+
+
+
+.data .card-body .header-text {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: var(--header-table-color);
+    border: none;
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.data .card-body .header-text i {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 12px;
+    margin-right: 12px;
+    
+}
+
+.data .card-body .header-text h2 {
+    margin-top: 8px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+

@@ -1,0 +1,101 @@
+
+button {
+    border: none;
+    
+}
+
+
+
+.data .card-body .header-text {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: var(--header-table-color);
+    border: none;
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.data .card-body .header-text i {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 12px;
+    margin-right: 12px;
+    
+}
+
+.data .card-body .header-text h2 {
+    margin-top: 8px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+.data .card-body .client-text .add-text a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    background: #999ffb;
+    color: #FFF;
+    transition: var(--tran-03);
+    text-decoration: none;
+}
+
+.data .card-body .client-text .add-text a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    background: #373b8a;
+    color: #FFF;
+
+    transition: var(--tran-03);
+}
+
+.add-text a i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.add-text a h4 {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.modal textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #FFF;
+    font-size: 16px;
+    resize: none;
+}
+
+.modal-content {
+    background: var(--modal-color);
+    color: var(--text-color);
+}
+
+
+.modal-content input , .modal-content textarea , .modal-content select{
+    color: var(--text-color);
+    background: var(--modal-color);
+    
+}
+
+.modal-content input:hover , .modal-content textarea:hover , .modal-content select:hover{
+    color: var(--text-color);
+    background: var(--modal-color);
+    
+}
